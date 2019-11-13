@@ -1,0 +1,31 @@
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    > *{
+        margin: 5px;
+    }
+}
+
+.tab-content{
+    display: flex;
+    justify-content: center;
+
+    > *{
+        margin: 20px 10px;
+    }
+}
+
+table{
+    border-collapse: collapse;
+
+    tr,th,td{
+        border: 1px solid black;
+        text-align: center;
+    }
+}
+
+.main-card{
+    display: flex;
+}

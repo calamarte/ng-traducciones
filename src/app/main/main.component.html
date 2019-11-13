@@ -1,0 +1,49 @@
+
+<!-- <table>
+    <tr>
+    <th>Español</th>
+    <th>Ingles</th>
+</tr>
+<tr *ngFor="let palabra of palabras">
+    <td>{{palabra.es}}</td>
+    <td>{{palabra.en}}</td>
+</tr>
+</table> -->
+
+<header>
+    <button ly-button raised bg="primary" size="large">Crear grupo</button>
+    <button ly-button raised bg="accent" size="large">Crear palabra</button>
+</header>
+
+<main>
+    <div ly-paper bg="background:primary">
+        <ly-tabs [alignTabs]="'center'" [selectedIndex]="0">
+          <ly-tab>
+            <button ly-tab-label>Grupos</button>
+            <div class="tab-content">
+              <ly-card *ngFor="let grupo of grupos" style="width: 300px">
+                  <ly-card-media bgImg="{{imagenes[grupo.nombre][imgIndex]}}" title="Mountains blue"></ly-card-media>
+                <ly-card-content>
+                    {{grupo.nombre}}
+                </ly-card-content>
+              </ly-card>
+            </div>
+          </ly-tab>
+          <ly-tab>
+            <button ly-tab-label>Palabras</button>
+            <div>
+
+              </div>
+          </ly-tab>
+        </ly-tabs>
+      </div>
+</main>
+
+
+<div class="main-card">
+        <!-- <ly-card *ngFor="let palabra of palabras" style="max-width: 320px">
+                <ly-card-content>
+                    
+                </ly-card-content>
+              </ly-card> -->
+</div>
